@@ -13,8 +13,8 @@ export class AuthService {
         private jwtService: JwtService
     ) {}
 
-    createUser(dto: AuthCredentialDTO) {
-        return this.repository.createUser(dto)
+    async createUser(dto: AuthCredentialDTO) {
+        return await this.repository.createUser(dto)
     }
 
     async signIn(dto: AuthCredentialDTO) {

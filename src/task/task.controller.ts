@@ -4,7 +4,6 @@ import { GetUser } from 'src/auth/get-user.decorator';
 import { User } from 'src/auth/model/user.entity';
 import { TaskCreateDTO } from './dto/task-create.dto';
 import { TaskFilter } from './dto/task-filter.dto';
-import { TaskStatusUpdateDTO } from './dto/task-status-update.dto';
 import { TaskService } from './task.service';
 
 @Controller('task')
